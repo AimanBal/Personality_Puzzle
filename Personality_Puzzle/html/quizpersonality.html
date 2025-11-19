@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PP-Quiz Personality</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/stylePP.css">
+</head>
+<body>
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+  <h1 class="w3-xxxlarge w3-text-theme">Personality Puzzle Menu</h1>
+  <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+  <a href="/Personality_Puzzle/index.html" class="w3-bar-item w3-button">Home</a>
+  <a href="/Personality_Puzzle/html/quizpersonality.html" class="w3-bar-item w3-button">Quiz Personality</a>
+  <a href="/Personality_Puzzle/html/personalitylearn.html" class="w3-bar-item w3-button">Learn Personality</a>
+  <a href="/Personality_Puzzle/html/field.html" class="w3-bar-item w3-button">Field Different</a>
+  <a href="/Personality_Puzzle/html/about.html" class="w3-bar-item w3-button">About Us</a>
+  <a href="/Personality_Puzzle/html/faq.html" class="w3-bar-item w3-button">FAQ</a>
+  <a href="/Personality_Puzzle/html/testimonials.html" class="w3-bar-item w3-button">Testimonials</a>
+</nav>
+
+<!-- Header -->
+<header class="w3-container w3-teal w3-padding" id="myHeader">
+  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i>  
+  <div class="w3-center">
+  <h3 style= "font-weight: bold; color: white;">It's so amazing to finally to understand yourself</h3>
+  <h1 class="w3-xxxlarge w3-animate-bottom w3-text-theme">PERSONALITY PUZZLE</h1>
+    <div class="w3-padding-32">
+      <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">Click For Quiz!</button>
+    </div>
+  </div>
+</header>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top w3-white">
+      <header class="w3-container" style="background-color: #518958;"> 
+        <span onclick="document.getElementById('id01').style.display='none'"
+        class="w3-button w3-display-topright">×</span>
+        <h4 style="color: white;">3-min personality test. Discover your type, understand yourself better!</h4>
+      </header>
+      <div class="w3-padding">
+        <p>Get ready to discover your trueself, and detailed insights into various aspects of life</p>
+        <p>Go to
+          <a 
+            class="w3-btn w3-theme" 
+            href="#myForm" 
+            onclick="document.getElementById('id01').style.display='none'">
+            Personality Quiz Section
+          </a> 
+		  to discover your personality
+        </p>
+      </div>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-center w3-margin-top">
+<div class="w3-half">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>1 Billion Test-Takers Worldwide</h3><br>
+  <img src="../images/billion.jpg" style="border-radius: 10px; width="350" height="400">
+  <p>Join the ranks of over 1 billion test-takers worldwide who have embarked on this transformative journey of self-discovery.</p>
+  <p>Trusted and celebrated across the globe, this personality test has helped countless individuals uncover their strengths, navigate challenges, and unlock their true potential. </p>
+  <p>Be part of a global community that values growth and self-awareness!</p>
+  </div>
+</div>
+
+<div class="w3-half">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>Scientifically Based Personality Quiz</h3><br>
+  <img src="../images/scientific.jpg" style="border-radius: 10px; width="350" height="400">
+  <p>Discover insights into your unique personality in just a few minutes! </p>
+  <p>Our quick and engaging personality test is designed to be both fun and scientifically grounded, offering you accurate and meaningful results. Whether you're curious about your strengths, exploring career possibilities, or just seeking to understand yourself better, this test is the perfect first step.</p>
+  <p>Completely free: No hidden costs, no strings attached.</p>
+  <p>User-friendly: Answer simple questions and get immediate results.</p>
+  <p>Backed by science: Based on proven psychological frameworks to ensure reliability.</p>
+  </div>
+</div>
+
+<div class="w3-container">
+<hr>
+<h1 class="w3-center w3-text-white" style= "font-family: 'Comic Sans MS', cursive; background-color: #518958;" id="myForm">Personality Quiz</h1>
+</div>
+
+<div class="w3-row-padding">
+<div class="w3-container">
+  <h2>Discover Your Personality Type</h2>
+  <p>Fill in your details and answer all the questions to find out your personality type!</p>
+
+  <!-- Form -->
+  <form id="personality-quiz" onsubmit="generateResult(event)">
+    <!-- Personal Details -->
+    <div class="w3-section">
+      <label for="name">Name</label>
+      <input class="w3-input" id="name" type="text" required>
+    </div>
+    <div class="w3-section">
+      <label for="age">Age</label>
+      <input class="w3-input" id="age" type="number" min="1" required>
+    </div>
+    <div class="w3-section">
+      <label for="country">Country</label>
+      <input class="w3-input" id="country" type="text" required>
+    </div>
+
+    <!-- Questions -->
+    <div>
+      <h4>1. Do you enjoy socializing at large gatherings?</h4>
+      <label>
+        <input type="radio" name="q1" value="E" required> Yes (Extrovert)
+      </label>
+      <label>
+        <input type="radio" name="q1" value="I"> No (Introvert)
+      </label>
+    </div>
+    <div>
+	<br>
+      <h4>2. Do you focus more on facts than possibilities?</h4>
+      <label>
+        <input type="radio" name="q2" value="S" required> Yes (Sensing)
+      </label>
+      <label>
+        <input type="radio" name="q2" value="N"> No (Intuition)
+      </label>
+    </div>
+    <div>
+	<br>
+      <h4>3. Do you base decisions more on logic than emotions?</h4>
+      <label>
+        <input type="radio" name="q3" value="T" required> Yes (Thinker)
+      </label>
+      <label>
+        <input type="radio" name="q3" value="F"> No (Feeler)
+      </label>
+    </div>
+    <div>
+	<br>
+      <h4>4. Do you plan everything in advance rather than going with the flow?</h4>
+      <label>
+        <input type="radio" name="q4" value="J" required> Yes (Judging)
+      </label>
+      <label>
+        <input type="radio" name="q4" value="P"> No (Perceiving)
+      </label>
+    </div>
+	<br>
+
+    <!-- Submit Button -->
+    <button type="submit" class="w3-button w3-theme">Submit</button>
+  </form>
+
+  <!-- Results Section -->
+  <div id="result-section" class="w3-card-4 w3-margin-top" style="display:none;">
+    <h3>Your Personality Type</h3>
+    <p><strong>Name:</strong> <span id="result-name"></span></p>
+    <p><strong>Age:</strong> <span id="result-age"></span></p>
+    <p><strong>Country:</strong> <span id="result-country"></span></p>
+    <p><strong>Personality Type:</strong> <span id="personality-result"></span></p>
+	<p>Learn more about your personality <a href="personalitylearn.html" class="w3-btn w3-theme" target="_blank">Learn More</a></p>
+  </div>
+</div>
+</div>
+<hr>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-16" id="myFooter" style="text-align: left;">
+  <h3>Personality Puzzle</h3>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Copyright &aimanb2024; Personality Puzzle<a/>. All rights reserved.</p>
+  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
+    <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+  <p>Remember to check out our background  <a href="/Personality_Puzzle/html/about.html" class="w3-btn w3-theme-dark" target="_blank">About Us</a></p>
+  <p>"Ready to start your journey? Take the test now!"</p>
+</footer>
+
+<!-- Script for Sidebar & generateResult(event) -->
+<script src="../javascript/jsPP.js"></script>
+
+</body>
+</html>

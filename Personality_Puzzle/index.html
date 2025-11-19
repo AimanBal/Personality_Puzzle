@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Personality Puzzle</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/stylePP.css">
+</head>
+<body>
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+  <h1 class="w3-xxxlarge w3-text-theme">Personality Puzzle Menu</h1>
+  <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+  <a href="/Personality_Puzzle/index.html" class="w3-bar-item w3-button">Home</a>
+  <a href="/Personality_Puzzle/html/quizpersonality.html" class="w3-bar-item w3-button">Quiz Personality</a>
+  <a href="/Personality_Puzzle/html/personalitylearn.html" class="w3-bar-item w3-button">Learn Personality</a>
+  <a href="/Personality_Puzzle/html/field.html" class="w3-bar-item w3-button">Field Different</a>
+  <a href="/Personality_Puzzle/html/about.html" class="w3-bar-item w3-button">About Us</a>
+  <a href="/Personality_Puzzle/html/faq.html" class="w3-bar-item w3-button">FAQ</a>
+  <a href="/Personality_Puzzle/html/testimonials.html" class="w3-bar-item w3-button">Testimonials</a>
+</nav>
+
+<!-- Header -->
+<header class="w3-container w3-teal w3-padding" id="myHeader">
+  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i>  
+  <div class="w3-center">
+  <h3 style= "font-weight: bold; color: white;">It's so amazing to finally to understand yourself</h3>
+  <h1 class="w3-xxxlarge w3-animate-bottom w3-text-theme">PERSONALITY PUZZLE</h1>
+    <div class="w3-padding-32">
+      <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">Take Quiz Now!</button>
+    </div>
+  </div>
+</header>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top w3-white">
+      <header class="w3-container"> 
+        <span onclick="document.getElementById('id01').style.display='none'"
+        class="w3-button w3-display-topright">×</span>
+        <h4 style= "color: white">3-min personality test. Discover your type, understand yourself better!</h4>
+        <h5 style= "color: white">Unlock the secret of your personality with Personality Puzzle <i class="fa fa-smile-o"></i></h5>
+      </header>
+      <div class="w3-padding">
+        <p>Gain deep insights into your unique character and learn how to thrive in all aspects of life</p>
+        <p>Go to our <a class="w3-btn w3-theme" href="/Personality_Puzzle/html/quizpersonality.html">Personality Quiz Page</a> to learn more about the quiz!</p>
+      </div>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-center w3-margin-top">
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>Personality</h3><br>
+  <img src="images/personality.jpg" style="border-radius: 10px;" width="350" height="400">
+  <p>What Personality Are You?</p>
+  <p>Personality refers to the combination of characteristics, behaviors, thoughts, and emotions that make each individual unique. It shapes how we interact with the world, influences our reactions to situations, and guides how we relate to others. Psychologists often discuss personality in terms of traits or consistent patterns in a person’s behavior, like extroversion, openness, or conscientiousness</p>
+  </div>
+  <br>
+</div>
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>History of the MBTI (Myers-Briggs Type Indicator)</h3><br>
+  <img src="images/history.jpg" width="300" height="190">
+  <p>In 1921, Swiss psychiatrist Carl Gustav Jung introduced the concept of psychological types in his book "Psychological Types", proposing that people have innate preferences in how they perceive the world and make decisions. He identified three primary dichotomies: Extraversion (E) vs. Introversion (I) for the orientation of energy, Sensing (S) vs. Intuition (N) for gathering information, and Thinking (T) vs. Feeling (F) for decision-making. Later, a fourth dichotomy, Judging (J) vs. Perceiving (P), emerged, reflecting a preference for a structured versus a flexible lifestyle.</p>
+  <p> His theory emphasized that these dichotomies represent tendencies rather than rigid categories, allowing for variation and complexity within each individual. Decades later, Jung's concepts were further developed into tools like the Myers-Briggs Type Indicator (MBTI), which expanded the practical application of his ideas for self-awareness, interpersonal relationships, and career development.</p>
+  </div>
+</div>
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>Personality Development</h3><br>
+  <img src="images/personality development.jpg" style="border-radius: 10px; width="350" height="400">
+  <p>Can someone personality change?</p>
+  <p>Life Experiences: Major life events like becoming a parent, losing a loved one, or changing careers can prompt shifts in personality. For instance, people often become more responsible and conscientious as they take on adult roles and responsibilities.</p>
+  <p>Aging and Maturity: People’s personalities tend to shift as they age. For example, most people become more agreeable, conscientious, and emotionally stable as they grow older, a trend known as the "maturity principle."</p>
+  </div>
+</div>
+<br>
+<div class="w3-half">
+<br>
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>Understand yourself</h3><br>
+  <img src="images/understand.png" style="border-radius: 20px; width="400" height="350">
+  <p>What good about understand your personality?</p>
+  <p>1.Better Self-Awareness</p>
+  <p>2.Improved Decision-Making</p>
+  <p>3.Enhanced Relationships</p>
+  <p>4.Increased Resilience and Well-Being</p>
+  <p>5.Career Satisfaction</p>
+  <p>6.Personal Growth</p>
+  </div>
+</div>
+<div class="w3-half">
+<br>
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>Personality and Genetics</h3><br>
+  <img src="images/genetics.png" style="border-radius: 10px; width="300" height="350">
+  <p>Research suggests that personality is influenced by both genetics and environmental factors. 
+  Twin studies have shown that genetic factors play a significant role in traits like extraversion and neuroticism, 
+  although environmental factors (like upbringing and life experiences) also contribute.</p>
+  <p>Personality is shaped by an intricate interplay of genetics, environmental factors, 
+  and life experiences. Both stable traits and those that evolve over time are influenced by biological, social, 
+  and cultural factors, making personality a dynamic and multifaceted aspect of human life.</p>
+  </div>
+</div>
+</div>
+<br>
+<!-- Footer -->
+<footer class="w3-container w3-padding-16" id="myFooter">
+  <h3>Personality Puzzle</h3>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Copyright &aimanb2024; Personality Puzzle<a/>. All rights reserved.</p>
+  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
+    <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+  <p>Remember to check out our background  <a href="/Personality_Puzzle/html/about.html" class="w3-btn w3-theme-dark" target="_blank">About Us</a></p>
+  <p>"Ready to start your journey? Take the test now!"</p>
+</footer>
+
+<!-- Script for Sidebar-->
+<script src="javascript/jsPP.js"></script>
+
+</body>
+</html>

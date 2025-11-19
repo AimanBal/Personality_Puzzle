@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PP-About Us</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/stylePP.css">
+</head>
+<body>
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+  <h1 class="w3-xxxlarge w3-text-theme">Personality Puzzle Menu</h1>
+  <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+  <a href="/Personality_Puzzle/index.html" class="w3-bar-item w3-button">Home</a>
+  <a href="/Personality_Puzzle/html/quizpersonality.html" class="w3-bar-item w3-button">Quiz Personality</a>
+  <a href="/Personality_Puzzle/html/personalitylearn.html" class="w3-bar-item w3-button">Learn Personality</a>
+  <a href="/Personality_Puzzle/html/field.html" class="w3-bar-item w3-button">Field Different</a>
+  <a href="/Personality_Puzzle/html/about.html" class="w3-bar-item w3-button">About Us</a>
+  <a href="/Personality_Puzzle/html/faq.html" class="w3-bar-item w3-button">FAQ</a>
+  <a href="/Personality_Puzzle/html/testimonials.html" class="w3-bar-item w3-button">Testimonials</a>
+</nav>
+
+<!-- Header -->
+<header class="w3-container w3-teal w3-padding" id="myHeader">
+  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i>  
+  <div class="w3-center">
+  <h3 style= "font-weight: bold; color: white;">It's so amazing to finally to understand yourself</h3>
+  <h1 class="w3-xxxlarge w3-animate-bottom w3-text-theme">PERSONALITY PUZZLE</h1>
+    <div class="w3-padding-32">
+      <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">Take Quiz Now!</button>
+    </div>
+  </div>
+</header>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top w3-white">
+      <header class="w3-container"> 
+        <span onclick="document.getElementById('id01').style.display='none'"
+        class="w3-button w3-display-topright">×</span>
+        <h4 style= "color: white">3-min personality test. Discover your type, understand yourself better!</h4>
+        <h5 style= "color: white">Unlock the secret of your personality with Personality Puzzle <i class="fa fa-smile-o"></i></h5>
+      </header>
+      <div class="w3-padding">
+        <p>Gain deep insights into your unique character and learn how to thrive in all aspects of life</p>
+        <p>Go to our <a class="w3-btn w3-theme" href="/Personality_Puzzle/html/quizpersonality.html">Personality Quiz Page</a> to learn more about the quiz!</p>
+      </div>
+    </div>
+</div>
+
+<div class="w3-center">
+  <h2>Over 3 million tests completed globally</h2>
+  <p>98% of users reported gaining valuable insights about themselves</p>
+</div>   
+
+<header class="w3-container w3-center" style="background-color: #FB824E;">
+  <h2 class="w3-text-white">Trusted by individuals in 150+ countries</h2>
+  <p></p>
+</header>
+<div style="text-align: center;">
+  <img src="../images/trust.jpg" style="border-radius: 20px;" width="350" height="400">
+</div>
+
+<div class="w3-padding w3-white w3-display-container">
+  <h2>Recommended by 9 out of 10 users to their friends and family</h2>
+  <p>85% accuracy rate based on user feedback and validation studies</p>
+  <p>500,000 returning users who revisit to track their growth</p>
+</div>
+
+<footer class="w3-container" style="background-color: #518958;">
+  <h5 style="color: white;">Proof!</h5>
+  <p class="w3-text-white">"Our tool is used by over 1,000 companies globally to improve team dynamics and leadership development"</p>
+</footer>
+
+<h2 class="w3-center"><img src="../images/deep.jpg" style="border-radius: 50px;" width="170" height="170">
+<h2 class="w3-center">Deep Thought Insights Hub Sdn. Bhd.</h2>
+<div class="w3-border">
+<div class="w3-bar w3-theme">
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openC(event,'Mission')">Mission</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openC(event,'Overview')">Overview</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openC(event,'Departments and Expertise')">Departments and Expertise</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openC(event,'Contact')">Contact Us</button>
+</div>
+
+<div id="Mission" class="w3-container term w3-animate-opacity">
+  <h2>Empowering self-discovery through innovative personality tools and expert analysis.</h2>
+  <p>At Deep Thought Insights Hub, we are dedicated to helping individuals uncover their true potential. Through scientifically crafted assessments, cutting-edge technology, and a user-centered approach, we aim to make personality exploration accessible, engaging, and transformative for everyone.</p>
+</div>
+
+<div id="Overview" class="w3-container term w3-animate-opacity">
+  <h2>Portfolio</h2>
+  <p>Deep Thought Insights Hub is a cutting-edge organization specializing in developing and managing personality-based platforms. With a focus on self-discovery, personal growth, and user engagement, the team combines technology, psychology, and design expertise to deliver seamless and insightful user experiences.</p> 
+  <p>Whether it’s through tailored personality assessments, interactive dashboards, or personalized growth recommendations, Persona Insights Hub is committed to transforming the way people explore and embrace their unique traits. Our collaborative team ensures that every aspect of our platform is designed to provide value, accessibility, and reliability, making self-discovery an engaging and rewarding journey for everyone.</p>
+</div>
+
+<div id="Departments and Expertise" class="w3-container w3-center term w3-animate-opacity">
+<br>
+  <div style="padding: 20px; background-color: black; color: white; font-size: 24px;">Psychological Research and Analysis Team</div>
+  <img src="../images/aiman.png" style="border-radius: 80px;" width="300" height="300">
+  <p>Dr. Ts. Aiman Balqis Ishak</p>
+  <p>CEO(Founder) & Lead Psychologist</p>
+  <img src="../images/hanie.png" style="border-radius: 80px;" width="300" height="300">
+  <p>Professor. Hanie Umi Sofea Mohammad Nizam</p>
+  <p>Behavioral Analysts<p>
+  <img src="../images/dayah.png" style="border-radius: 80px;" width="300" height="300">
+  <p>Dr. Puteri Nor Hedayah Fancinta Nasir</p>
+  <p>Data Psychologists</p>
+  <div style="padding: 20px; background-color: black; color: white; font-size: 24px;">Web Developoment Team</div>
+  <img src="../images/mira.png" style="border-radius: 80px;" width="300" height="300">
+  <p>Dr. Nur Amira Hanna Zaidi</p>
+  <p>Frontend Developer</p>
+  <img src="../images/qihah.png" style="border-radius: 80px;" width="300" height="300">
+  <p>Dr. Nur Faqihah Rasyiqah MD Yusof</p>
+  <p>Backend Developer</p>
+  <img src="../images/hani.png" style="border-radius: 80px;" width="230" height="300">
+  <p>Dr. Hani Huraini Hassin</p>
+  <p>UX/UI Designer</p>
+  <div style="padding: 20px; background-color: black; color: white; font-size: 24px;">Data Science and Analytics Team</div>
+  <img src="../images/aisyah.png" style="border-radius: 80px;" width="300" height="300">
+  <p>Dr. Nur Fathiah Aisyah Ghazali</p>
+  <p>Data Analyst</p>
+  <img src="../images/siti.png" style="border-radius: 80px;" width="300" height="300">
+  <p>Dr. Siti Zaleha Kadri</p>
+  <p>Data Engineer</p>
+  <div style="padding: 20px; background-color: black; color: white; font-size: 24px;">IT Support and Security</div>
+  <img src="../images/intan.png" style="border-radius: 95px;" width="300" height="300">
+  <p>Ts. Intan Syahzani Idayu Mazlan</p>
+  <p>Cybersecurity Specialist</p>
+</div>
+
+<div id="Contact" class="w3-container term w3-animate-opacity">
+  <h2>Any Queries?</h2>
+  <p>Deep Thought Insights Hub Sdn. Bhd.</p>
+📍 Head Office:
+Level 15, Tower B,
+Cyberjaya Business Park,
+63000 Cyberjaya, Selangor, Malaysia
+<br>
+
+📞 Phone: +60 3-1234 5678 <br>
+📠 Fax: +60 3-1234 5679 <br>
+📧 Email: info@deepthoughtinsights.com <br>
+🌐 Website: www.deepthoughtinsights.com <br>
+🕒 Business Hours:
+Monday - Friday: 9:00 AM - 6:00 PM
+Saturday & Sunday: Closed
+<p>
+Follow us on social media:<br>
+Facebook: Deep Thought Insights Hub <br>
+Instagram: @deepthoughtinsights <br>
+LinkedIn: Deep Thought Insights Hub <br>
+</p> 
+  <p>Whether it’s through tailored personality assessments, interactive dashboards, or personalized growth recommendations, Persona Insights Hub is committed to transforming the way people explore and embrace their unique traits. Our collaborative team ensures that every aspect of our platform is designed to provide value, accessibility, and reliability, making self-discovery an engaging and rewarding journey for everyone.</p>
+</div>
+</div>
+<br>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-16" id="myFooter">
+  <h3>Personality Puzzle</h3>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Copyright &aimanb2024; Personality Puzzle<a/>. All rights reserved.</p>
+  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
+    <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+  <p>Remember to check out our background  <a href="/Personality_Puzzle/html/about.html" class="w3-btn w3-theme-dark" target="_blank">About Us</a></p>
+  <p>"Ready to start your journey? Take the test now!"</p>
+</footer>
+
+<!-- Script for Sidebar, Tabs-->
+<script src="../javascript/jsPP.js"></script>
+
+</body>
+</html>

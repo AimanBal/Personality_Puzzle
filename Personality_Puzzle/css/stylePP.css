@@ -1,0 +1,28 @@
+/* Header styles */
+#myHeader {
+  background-image: url('/Personality_Puzzle/images/puzzle.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#myHeader h1 {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 12rem;
+  font-weight: bold;
+}
+
+/* Modal styles */
+#id01 header {
+  background-color: #518958;
+  color: white;
+}
+
+#id01 .w3-button {
+  background-color: #518958;
+}
+
+#myFooter {
+background-color: #F9C73D;
+}
+

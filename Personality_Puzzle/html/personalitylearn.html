@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PP-Learn Personality</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/stylePP.css">
+</head>
+<body>
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+  <h1 class="w3-xxxlarge w3-text-theme">Personality Puzzle Menu</h1>
+  <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+  <a href="/Personality_Puzzle/index.html" class="w3-bar-item w3-button">Home</a>
+  <a href="/Personality_Puzzle/html/quizpersonality.html" class="w3-bar-item w3-button">Quiz Personality</a>
+  <a href="/Personality_Puzzle/html/personalitylearn.html" class="w3-bar-item w3-button">Learn Personality</a>
+  <a href="/Personality_Puzzle/html/field.html" class="w3-bar-item w3-button">Field Different</a>
+  <a href="/Personality_Puzzle/html/about.html" class="w3-bar-item w3-button">About Us</a>
+  <a href="/Personality_Puzzle/html/faq.html" class="w3-bar-item w3-button">FAQ</a>
+  <a href="/Personality_Puzzle/html/testimonials.html" class="w3-bar-item w3-button">Testimonials</a>
+</nav>
+
+<!-- Header -->
+<header class="w3-container w3-teal w3-padding" id="myHeader">
+  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i>  
+  <div class="w3-center">
+  <h3 style= "font-weight: bold; color: white;">It's so amazing to finally to understand yourself</h3>
+  <h1 class="w3-xxxlarge w3-animate-bottom w3-text-theme">PERSONALITY PUZZLE</h1>
+    <div class="w3-padding-32">
+      <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">Take Quiz Now!</button>
+    </div>
+  </div>
+</header>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top w3-white">
+      <header class="w3-container"> 
+        <span onclick="document.getElementById('id01').style.display='none'"
+        class="w3-button w3-display-topright">×</span>
+        <h4 style= "color: white">3-min personality test. Discover your type, understand yourself better!</h4>
+        <h5 style= "color: white">Unlock the secret of your personality with Personality Puzzle <i class="fa fa-smile-o"></i></h5>
+      </header>
+      <div class="w3-padding">
+        <p>Gain deep insights into your unique character and learn how to thrive in all aspects of life</p>
+        <p>Go to our <a class="w3-btn w3-theme" href="/Personality_Puzzle/html/quizpersonality.html">Personality Quiz Page</a> to learn more about the quiz!</p>
+      </div>
+    </div>
+</div>
+
+</div>
+<div class="w3-center w3-container">
+<hr>
+<h2 class="w3-center">Learn About Your Personality</h2>
+<div class="w3-center">
+  <div style="padding: 10px; background-color: #FA824F; color: white;">"Knowing yourself is the beginning of all wisdom" - by Aristotle</div>
+  <img src="../images/16mbti.jpg" style="border-radius: 10px;" width="350" height="400">
+  <p>Click Your Personality</p>
+</div>   
+
+<div class="w3-bar" style="background-color: #518958; color: white;">
+  <a href="#" class="w3-bar-item w3-button w3-padding-16" onclick="showPersonality('INTJ')">INTJ</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-16" onclick="showPersonality('INTP')">INTP</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-16" onclick="showPersonality('ENTJ')">ENTJ</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-16" onclick="showPersonality('ENTP')">ENTP</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-16" onclick="showPersonality('INFJ')">INFJ</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-16" onclick="showPersonality('ENFJ')">ENFJ</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-16" onclick="showPersonality('ENFP')">ENFP</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-16" onclick="showPersonality('ISTJ')">ISTJ</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-16" onclick="showPersonality('ISFJ')">ISFJ</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-16" onclick="showPersonality('ESTJ')">ESTJ</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-16" onclick="showPersonality('ESFJ')">ESFJ</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-16" onclick="showPersonality('ISTP')">ISTP</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-16" onclick="showPersonality('ISFP')">ISFP</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-16" onclick="showPersonality('ESTP')">ESTP</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-16" onclick="showPersonality('ESFP')">ESFP</a>
+</div>
+
+<!-- Section to display the selected personality details -->
+<div id="selected-personality" class="w3-padding w3-margin-top" style="display:none; background-color: #518958; color: white;">
+  <h3 id="personality-name"></h3>
+  <p><strong>Strength:</strong> <span id="personality-strength"></span></p>
+  <p><strong>Weakness:</strong> <span id="personality-weakness"></span></p>
+  <p><strong>Romantic Relationships:</strong> <span id="personality-relationships"></span></p>
+  <p><strong>Career Paths:</strong> <span id="personality-careers"></span></p>
+</div>
+</div>
+<br>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-16" id="myFooter">
+  <h3>Personality Puzzle</h3>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Copyright &aimanb2024; Personality Puzzle<a/>. All rights reserved.</p>
+  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
+    <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+  <p>Remember to check out our background  <a href="/Personality_Puzzle/html/about.html" class="w3-btn w3-theme-dark" target="_blank">About Us</a></p>
+  <p>"Ready to start your journey? Take the test now!"</p>
+</footer>
+
+<!-- Script for Sidebar & showPersonality(type) -->
+<script>
+const personalityData = {
+  INTJ: {
+    name: "INTJ",
+    strength: "Strategic and independent thinkers.",
+    weakness: "Can come across as aloof.",
+    relationships: "Seek intellectual compatibility.",
+    careers: "Excel in strategic fields like research or architecture.",
+  },
+  INTP: {
+    name: "INTP",
+    strength: "Innovative and logical.",
+    weakness: "Can be overly critical or detached.",
+    relationships: "Value intellectual conversations in relationships.",
+    careers: "Excel in theoretical and analytical fields like science or philosophy.",
+  },
+  ENTJ: {
+    name: "ENTJ",
+    strength: "Natural leaders with a clear vision.",
+    weakness: "Can be overbearing or insensitive.",
+    relationships: "Seek partners who match their ambition.",
+    careers: "Excel in leadership roles and strategic planning.",
+  },
+  ENTP: {
+    name: "ENTP",
+    strength: "Energetic and full of ideas.",
+    weakness: "Can be argumentative or scattered.",
+    relationships: "Enjoy playful and stimulating relationships.",
+    careers: "Excel in fields requiring innovation and quick thinking.",
+  },
+  INFJ: {
+    name: "INFJ",
+    strength: "Visionary and insightful.",
+    weakness: "Perfectionist tendencies.",
+    relationships: "Deep and meaningful connections.",
+    careers: "Ideal in counseling, writing, or social work.",
+  },
+   ENFP: {
+    name: "ENFP",
+    strength: "Charismatic and altruistic.",
+    weakness: "Prone to overcommitment.",
+    relationships: "Seek meaningful and adventurous love.",
+    careers: "Fit for creative and advocacy roles.",
+  },
+  ENFJ: {
+    name: "ENFJ",
+    strength: "Curious and inspiring.",
+    weakness: "Tend to neglect their own needs.",
+    relationships: "Passionate and supportive partners.",
+    careers: "Thrive in leadership or mentoring roles.",
+  },
+   ISTJ: {
+    name: "ISTJ",
+    strength: "Reliable and detail-oriented.",
+    weakness: "Resistant to change.",
+    relationships: "Loyal and traditional in their commitments.",
+    careers: "Thrive in structured environments like law or accounting.",
+  },
+  ISFJ: {
+    name: "ISFJ",
+    strength: "Empathetic and supportive.",
+    weakness: "Overly self-sacrificing.",
+    relationships: "Devoted and nurturing partners.",
+    careers: "Excellent in caregiving roles like nursing or counseling.",
+  },
+  ESTJ: {
+    name: "ESTJ",
+    strength: "Organized and confident leaders.",
+    weakness: "Can be overly rigid.",
+    relationships: "Loyal and value tradition.",
+    careers: "Strong in management or law enforcement.",
+  },
+  ESFJ: {
+    name: "ESFJ",
+    strength: "Caring and socially adept.",
+    weakness: "Struggle with criticism.",
+    relationships: "Devoted and relationship-focused.",
+    careers: "Excel in teaching or healthcare.",
+  },
+   ESTP: {
+    name: "ESTP",
+    strength: "Energetic and bold.",
+    weakness: "Impulsive decision-making.",
+    relationships: "Passionate but crave excitement.",
+    careers: "Thrive in sales or event planning.",
+  },
+  ISFP: {
+    name: "ISFP",
+    strength: "Creative and sensitive.",
+    weakness: "Struggle with long-term planning.",
+    relationships: "Warm and emotionally present.",
+    careers: "Fit well in artistic or humanitarian roles.",
+  },
+  ISTP: {
+    name: "ISTP",
+    strength: "Practical and resourceful.",
+    weakness: "Dislike rules and restrictions.",
+    relationships: "Easygoing but need personal space.",
+    careers: "Great in hands-on roles like engineering or mechanics.",
+  },
+  ESFP: {
+    name: "ESFP",
+    strength: "Charismatic and enthusiastic.",
+    weakness: "Easily bored with routine.",
+    relationships: "Fun-loving and affectionate.",
+    careers: "Shine in entertainment or public relations.",
+  },
+};
+</script>
+
+<script src="../javascript/jsPP.js"></script>
+
+</body>
+</html>
