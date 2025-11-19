@@ -22,15 +22,3 @@ This project demonstrates proficiency in front-end logic and data processing to 
 ### Technical Stack
 * Front-End: HTML5, CSS3
 * Logic: JavaScript (used for handling user input, calculating the four-letter code, and displaying results based on the MBTI data model).
-
-### Implementation Details
-* Data Mapping: The core of the application uses JavaScript to process user responses and assign a score to each of the four MBTI dichotomies:
-    * E/I (Extraversion/Introversion)
-    * S/N (Sensing/Intuition)
-    * T/F (Thinking/Feeling)
-    * J/P (Judging/Perceiving)
-* The final personality type (e.g., INTJ, ESFP) is determined by selecting the highest-scoring preference within each pair.
-
-* [Link to Live Demo (if available)]
-* [Link to a screenshot of the questionnaire page]
-* [Link to a screenshot of the results page]
